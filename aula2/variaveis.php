@@ -9,11 +9,11 @@
     <pre>
     $variavel = 10;
     $nome = "Maria";
-    $noto = 5.5;
+    $nota = 5.5;
 </pre>
 </p>
 
 <?php
-    $nome = "Ivan";
+    $nome = "Maria Luisa";
     echo "Olá $nome, seja bem vindo a auala de backend!";
 ?>
