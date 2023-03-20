@@ -44,8 +44,8 @@
         fetch("http://localhost/3infoA/MariaLuisa/aula11/alunos.php")
         .then(response => response.json())
         .then(json => {
-            for(let aluno of json){
-                criarLinha(aluno.nome,aluno.nota1,aluno.nota2);
+            for(var aluno of json){
+                criarLinha(aluno.nome,aluno.notas1,aluno.notas2);
             }
         });
 
