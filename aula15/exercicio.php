@@ -1,20 +1,17 @@
 <?php
 
-$cor=[];
-$cor []= "yellow";
-$cor []= "green";
-$cor []= "blue";
-$cor []= "pink";
-$cor []= "red";
-$cor []= "purple";
-$cor []= "orange";
-$cor []= "gray";
-$cor []= "white";
+$cores=[];
+$cores []= "yellow";
+$cores []= "green";
+$cores []= "blue";
+$cores []= "pink";
+$cores []= "red";
+$cores []= "purple";
+$cores []= "orange";
+$cores []= "gray";
+$cores []= "white";
 
-foreach($cor as $key => $cor){
-    echo  "<a href='exercicio.php?cor=$cor'>Mudar para: $cor </a>" . "</br>";
-}
-
+ 
 
 if(isset($_GET['cor'])){
     $cor = $_GET['cor'];
@@ -40,7 +37,12 @@ if(isset($_GET['cor'])){
 <body>
 
  
-
+      <?php foreach($cores as $key => $cor){
+          echo "<a href='exercicio.php?cor=$cor'>
+                Mudar para $cor 
+                </a>" . "</br>";
+        }
+    ?>
 
 
 
