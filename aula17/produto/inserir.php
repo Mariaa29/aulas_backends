@@ -25,4 +25,4 @@ $comando->bind_param("ssds", $nome, $descricao, $preco, $foto);
 $comando->execute();
 }
 //abre o arquivo form.php, vai para um arquivo e ja volta para o outro
-header("Location: form.php");
+header("Location: produtos.php");
