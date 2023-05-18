@@ -47,7 +47,7 @@
     
 </p>
 
-<h2> Resposta </h2>
+<h2> Resposta: </h2>
 <?php
 
     $murilo=[];

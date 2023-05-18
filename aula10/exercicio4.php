@@ -25,7 +25,7 @@
     $tabela =[$aluno1,$aluno2,$aluno3];
 
    
-        foreach ($tabela as $key => $value) {
+        foreach ($tabela as $key => $value) { 
             echo $value["nome"] ."<br>". $value["notas1"]."<br>" . $value["notas2"] ."<br>"."<br>";
         }
         

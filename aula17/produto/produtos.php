@@ -39,7 +39,7 @@
     <tr>
       <th scope="row"><?php echo $produto ["nome"];?></th>
       <td><?php echo $produto ["preco"];?></td>
-      <td><?php echo $produto ["foto"];?></td>
+      <td><img src="../uploads/<?php echo $produto ["foto"];?>" height="50px" alt=""></td>
       <td>
         <a href="excluir.php?id=<?php echo $produto ["idproduto"];?>" class="btn btn-danger"> <i class="fa-solid fa-trash"></i> Excluir</a>
         <a href="form.php?id=<?php echo $produto ["idproduto"];?>" class="btn btn-primary"> <i class="fa-solid fa-pen-to-square"></i> Atualizar</a>
