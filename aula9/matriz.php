@@ -26,7 +26,7 @@
 
 
     echo"<pre>";
-        var_dump($tabela);
+       var_dump($tabela);
     echo"</pre>";
 
     echo $tabela[1] ["marca"];
@@ -35,6 +35,6 @@
     //json - Javascript Object Notation 
     //xml
 
-    echo json_encode ($tabela);
+    //echo json_encode ($tabela);
 
 ?>

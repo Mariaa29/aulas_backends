@@ -15,9 +15,9 @@
   <thead>
     <tr>
       <th scope="col">Nome</th>
-      <th scope="col">Preço</th>
+      <th scope="col">Login</th>
       <th scope="col">Foto</th>
-      <th scope="col">Ações</th>
+      <th scope="col" width="20%" >Ações</th>
     </tr>
   </thead>
 
@@ -28,6 +28,7 @@
       <td><?php echo $usuario ['login'];?></td>
       <td><img src="../uploads/<?php echo $usuario ['foto'];?>" height="50px" alt=""></td>
       <td>
+        <td class="text-end">
         <a href="excluir.php?id=<?php echo $usuario ["idusuario"];?>" class="btn btn-danger"> <i class="fa-solid fa-trash"></i> Excluir</a>
         <a href="form.php?id=<?php echo $usuario ["idusuario"];?>" class="btn btn-primary"> <i class="fa-solid fa-pen-to-square"></i> Atualizar</a>
       </td>

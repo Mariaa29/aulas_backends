@@ -27,4 +27,4 @@ $comando->execute();
 }
 
 //abre o arquivo form.php, vai para um arquivo e ja volta para o outro
-header("Location: usuarios.php");
+header("Location: index.php");
