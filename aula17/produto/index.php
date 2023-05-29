@@ -1,3 +1,4 @@
+<?php require_once "../controla_sessao/controla.php"?>
 <?php require_once "consultar_todos.php"?>
 <?php require_once "../template/cabecalho.php"; ?>
 
@@ -11,7 +12,7 @@
 
     </div>
 
-    <table class="table">
+    <table class="table" id="myTable">
   <thead>
     <tr>
       <th scope="col">Nome</th>
@@ -27,7 +28,7 @@
       <th scope="row"><?php echo $produto ["nome"];?></th>
       <td><?php echo $produto ["preco"];?></td>
       <td><img src="../uploads/<?php echo $produto ["foto"];?>" height="50px" alt=""></td>
-      <td>
+      
       <td class="text-end">
         <a href="excluir.php?id=<?php echo $produto ["idproduto"];?>" class="btn btn-danger"> <i class="fa-solid fa-trash"></i> Excluir</a>
         <a href="form.php?id=<?php echo $produto ["idproduto"];?>" class="btn btn-primary"> <i class="fa-solid fa-pen-to-square"></i> Atualizar</a>
