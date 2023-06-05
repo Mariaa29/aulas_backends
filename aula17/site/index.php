@@ -24,7 +24,7 @@
 
 
       <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="index.php?categoria= <?php echo $value["categoria"];?>">
             <?php echo $value["categoria"];?>
           </a>
         </li>

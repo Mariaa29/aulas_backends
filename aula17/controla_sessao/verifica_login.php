@@ -1,6 +1,5 @@
 <?php
 
-
 //verifica se foi enviado os dados de usuário e senha do formulário de login
 if(isset($_POST['usuario']) and isset($_POST['senha'])){
     $usuario = $_POST['usuario'];
@@ -41,10 +40,10 @@ if($usuario){
     header("Location: ../produto/index.php");
     
 }else{
-    echo"Senha incorreta";
+    $erro_login= "Senha incorreta";
 }
 }else{
-    echo"Não existe usuário com o login informado";
+    $erro_login= "Não existe usuário com o login informado";
 };
 
 }
