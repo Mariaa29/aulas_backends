@@ -4,14 +4,19 @@
 
 require_once "../conexao.php";
 
-if (isset ($_POST["titulo"]) && isset($_POST["diretor"]) && isset($_POST["ano"]) && isset($_POST["genero"]) )
+if (isset ($_POST["titulo"]) )
 {
 
-
+    $id = $_POST['id'];
+    $titulo= $_POST["titulo"];
+    $diretor = $_POST["diretor"];
+    $ano = $_POST["ano"];
+    $genero = $_POST["genero"];
+    $foto= $nome_arquivo;
 
 
 //String com o comando SQL para ser executado no DB 
-$sql = "UPDATE produto SET `titulo`=?, `diretor`=?, `ano`=?, `genero`=? WHERE  `idfilmes`=?;"; 
+$sql = "UPDATE filmes SET `titulo`=?, `diretor`=?, `ano`=?, `genero`=? WHERE  `idfilmes`=?;"; 
 echo $sql;
 
 
@@ -19,7 +24,7 @@ echo $sql;
 $comando= $conexao->prepare($sql);
 
 //Adiciona os valores nos parâmetros
-$comando->bind_param("ssdsi", $titulo, $diretor, $ano, $genero, $id);
+$comando->bind_param("ssisi", $titulo, $diretor, $ano, $genero, $id);
 
 //executa o SQL - Comando no Banco de Dados 
 $comando->execute();
