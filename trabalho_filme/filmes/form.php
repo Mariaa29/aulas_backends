@@ -1,4 +1,4 @@
-
+<?php require_once "consultar_por_id.php"; ?>
 <?php require_once "../template/cabecalho.php"; ?>
 
 
