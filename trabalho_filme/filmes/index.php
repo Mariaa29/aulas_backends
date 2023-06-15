@@ -25,6 +25,11 @@
     </tr>
   </thead>
 
+
+
+
+
+  
   <tbody>
 <?php foreach($filmes as $filme){ ?>
     <tr>
