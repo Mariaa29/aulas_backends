@@ -20,7 +20,7 @@
       <th scope="col">Diretor</th>
       <th scope="col">Ano</th>
       <th scope="col">Gênero</th>
-      <th scope="col">Ações</th>
+      <th scope="col"></th>
  
     </tr>
   </thead>
@@ -33,10 +33,10 @@
   <tbody>
 <?php foreach($filmes as $filme){ ?>
     <tr>
-      <td scope="row"><?php echo $filme ["titulo"];?></td>
-      <td><?php echo $filme ["diretor"];?></td>
-      <td><?php echo $filme ["ano"];?></td>
-      <td><?php echo $filme ["genero"];?></td>
+      <td scope="row"><?php echo $filme["titulo"];?></td>
+      <td><?php echo $filme["diretor"];?></td>
+      <td><?php echo $filme["ano"];?></td>
+      <td><?php echo $filme["genero"];?></td>
       
     
       <td class="text-end">

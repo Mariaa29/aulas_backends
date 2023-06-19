@@ -16,13 +16,13 @@
   <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../imagens/imagem1.jpg" class="d-block w-100" alt="...">
+      <img src="../imagens_trabalho/imagem1.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="../imagens/imagem.2.jpg" class="d-block w-100" alt="...">
+      <img src="../imagens_trabalho/imagens2.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="../imagens/imagem.3.jpg" class="d-block w-100" alt="...">
+      <img src="../imagens_trabalho/imagem3.jpg" class="d-block w-100" alt="...">
   </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

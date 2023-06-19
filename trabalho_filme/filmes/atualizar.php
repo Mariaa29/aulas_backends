@@ -7,7 +7,7 @@ require_once "../conexao.php";
 if (isset ($_POST["titulo"]) )
 {
 
-    $id = $_POST['idfilmes'];
+    $id = $_POST['id'];
     $titulo= $_POST["titulo"];
     $diretor = $_POST["diretor"];
     $ano = $_POST["ano"];
@@ -30,5 +30,5 @@ $comando->bind_param("ssisi", $titulo, $diretor, $ano, $genero, $id);
 $comando->execute();
  }
 //abre o arquivo form.php, vai para um arquivo e ja volta para o outro
-//header("Location: index.php");
+header("Location: index.php");
 
